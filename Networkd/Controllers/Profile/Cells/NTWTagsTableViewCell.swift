@@ -2,8 +2,8 @@
 //  NTWTagsTableViewCell.swift
 //  Networkd
 //
-//  Created by Mario Andres Villamizar Palacio on 5/4/17.
-//  Copyright © 2017 Refundo LLC. All rights reserved.
+//  Created by CloudStream on 5/4/17.
+//  Copyright © 2017 CloudStream LLC. All rights reserved.
 //
 
 import UIKit

@@ -2,8 +2,8 @@
 //  NTWWorkExperience.swift
 //  Networkd
 //
-//  Created by Carlos Rios on 5/9/17.
-//  Copyright © 2017 Refundo LLC. All rights reserved.
+//  Created by Cloud Stream on 5/9/17.
+//  Copyright © 2017 CloudStream LLC. All rights reserved.
 //
 
 import Foundation

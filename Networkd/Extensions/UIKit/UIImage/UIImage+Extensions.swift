@@ -2,7 +2,7 @@
 //  UIImage+Extensions.swift
 //  MYSO-iOS
 //
-//  Created by Mario Andres Villamizar Palacio on 7/9/16.
+//  Created by CloudStream on 7/9/16.
 //  Copyright © 2016 The App Chefs. All rights reserved.
 //
 
