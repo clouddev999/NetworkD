@@ -1,0 +1,1394 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04A61BB37BB923BAF3CF06CD /* Pods_Networkd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA878E9E8C839059DA879910 /* Pods_Networkd.framework */; };
+		0823EEE41946CA450724218A /* Pods_NetworkdTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B478FA4FB75270A0B7F9E4 /* Pods_NetworkdTests.framework */; };
+		4F1B268B1EC01DEB0003AA7A /* RPUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1B268A1EC01DEB0003AA7A /* RPUser.swift */; };
+		4F1B268D1EC01E130003AA7A /* RPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1B268C1EC01E130003AA7A /* RPError.swift */; };
+		4F1B26901EC0A6290003AA7A /* login.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F1B268F1EC0A6290003AA7A /* login.plist */; };
+		4F1B26921EC0A7650003AA7A /* RPConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1B26911EC0A7650003AA7A /* RPConstants.swift */; };
+		4F1B26941EC0D14C0003AA7A /* RPWorkExperience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1B26931EC0D14C0003AA7A /* RPWorkExperience.swift */; };
+		4F1B26971EC0F4140003AA7A /* RPEducation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1B26961EC0F4140003AA7A /* RPEducation.swift */; };
+		4F1B26991EC1055D0003AA7A /* RPInterest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1B26981EC1055D0003AA7A /* RPInterest.swift */; };
+		4F1B269B1EC10AA90003AA7A /* RPSkill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1B269A1EC10AA90003AA7A /* RPSkill.swift */; };
+		4F1D5D6A1EC3E62800A31AA8 /* BaseInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D5D691EC3E62800A31AA8 /* BaseInteractorTest.swift */; };
+		4F670E261EC16D6C00C12AEB /* login_wrong.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F670E251EC16D6C00C12AEB /* login_wrong.plist */; };
+		4F670E2A1EC1FCF700C12AEB /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F670E291EC1FCF700C12AEB /* LocalStorage.swift */; };
+		4F670E2C1EC2073100C12AEB /* UserRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F670E2B1EC2073100C12AEB /* UserRepo.swift */; };
+		4F670E2F1EC21BB800C12AEB /* NTWWorkExperience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F670E2E1EC21BB800C12AEB /* NTWWorkExperience.swift */; };
+		4F670E311EC21C5F00C12AEB /* NTWEducation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F670E301EC21C5F00C12AEB /* NTWEducation.swift */; };
+		4F670E331EC21D6000C12AEB /* NTWInterest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F670E321EC21D6000C12AEB /* NTWInterest.swift */; };
+		4F670E351EC23B4D00C12AEB /* NTWSkills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F670E341EC23B4D00C12AEB /* NTWSkills.swift */; };
+		4F670E371EC2523C00C12AEB /* SignInInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F670E361EC2523C00C12AEB /* SignInInteractorTest.swift */; };
+		4F670E3A1EC2537200C12AEB /* LocalFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F670E391EC2537200C12AEB /* LocalFake.swift */; };
+		4F670E3D1EC2547B00C12AEB /* BaseViewFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F670E3C1EC2547B00C12AEB /* BaseViewFake.swift */; };
+		4F670E3F1EC2B78E00C12AEB /* RPSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F670E3E1EC2B78E00C12AEB /* RPSession.swift */; };
+		4F670E411EC2B83000C12AEB /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F670E401EC2B83000C12AEB /* File.swift */; };
+		4F670E431EC3499F00C12AEB /* signup.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F670E421EC3499F00C12AEB /* signup.plist */; };
+		4F670E451EC36C0700C12AEB /* gravatar.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F670E441EC36C0700C12AEB /* gravatar.plist */; };
+		4F670E471EC371EC00C12AEB /* RPGravatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F670E461EC371EC00C12AEB /* RPGravatar.swift */; };
+		4F670E4B1EC3737A00C12AEB /* NTWGravatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F670E4A1EC3737A00C12AEB /* NTWGravatar.swift */; };
+		4F7B43331EBD03C50026263B /* SignInInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7B43321EBD03C50026263B /* SignInInteractor.swift */; };
+		4F7B43351EBD04020026263B /* BaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7B43341EBD04020026263B /* BaseInteractor.swift */; };
+		4F7B43381EBD04FA0026263B /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7B43371EBD04FA0026263B /* BasePresenter.swift */; };
+		4F7B433B1EBD08D80026263B /* NetworkdTestSuite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7B433A1EBD08D80026263B /* NetworkdTestSuite.swift */; };
+		4F7B43431EBD65D50026263B /* CloudStorageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7B43421EBD65D50026263B /* CloudStorageTest.swift */; };
+		4F9079881EC3F82F001761B0 /* ResetPasswordInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9079871EC3F82F001761B0 /* ResetPasswordInteractorTest.swift */; };
+		4F90798B1EC3FC7A001761B0 /* error_reset_pass.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F9079891EC3FC7A001761B0 /* error_reset_pass.plist */; };
+		4F90798C1EC3FC7A001761B0 /* success.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4F90798A1EC3FC7A001761B0 /* success.plist */; };
+		4F90798E1EC40D60001761B0 /* ResetPassInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F90798D1EC40D60001761B0 /* ResetPassInteractor.swift */; };
+		4F9079901EC40DB2001761B0 /* NTWSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F90798F1EC40DB2001761B0 /* NTWSuccess.swift */; };
+		4F9079921EC415D7001761B0 /* RPSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9079911EC415D7001761B0 /* RPSuccess.swift */; };
+		4FB4ADCB1EBF4C8200498CEB /* CloudStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB4ADCA1EBF4C8200498CEB /* CloudStorage.swift */; };
+		4FB4ADCD1EBF4DF700498CEB /* NetworkdAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB4ADCC1EBF4DF700498CEB /* NetworkdAdapter.swift */; };
+		4FB4ADD01EBF69C200498CEB /* NetworkFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB4ADCF1EBF69C200498CEB /* NetworkFake.swift */; };
+		A906666C1EC1F5060091C838 /* NTWButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A906666B1EC1F5060091C838 /* NTWButtonTableViewCell.swift */; };
+		A906666F1EC201090091C838 /* NTWAddEducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A906666E1EC201090091C838 /* NTWAddEducationViewController.swift */; };
+		A90666721EC22ADC0091C838 /* NTWNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90666711EC22ADC0091C838 /* NTWNewsViewController.swift */; };
+		A90666741EC246C10091C838 /* NTWNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90666731EC246C10091C838 /* NTWNewsTableViewCell.swift */; };
+		A90666771EC26F710091C838 /* NTWCreateAPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90666761EC26F710091C838 /* NTWCreateAPostViewController.swift */; };
+		A91C9C491EC0A18700FAEE13 /* NTWAddWorkExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91C9C481EC0A18700FAEE13 /* NTWAddWorkExperienceViewController.swift */; };
+		A91C9C4B1EC0CC9500FAEE13 /* appleLogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A91C9C4A1EC0CC9500FAEE13 /* appleLogo.jpg */; };
+		A91C9C511EC11BD800FAEE13 /* NTWSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91C9C501EC11BD800FAEE13 /* NTWSearchViewController.swift */; };
+		A92A3EA81EBA0FDA00D75AC4 /* NTWGlobalAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92A3EA71EBA0FDA00D75AC4 /* NTWGlobalAppearance.swift */; };
+		A92AE4FF1EBA7595008C0D26 /* padLock.png in Resources */ = {isa = PBXBuildFile; fileRef = A92AE4FE1EBA7595008C0D26 /* padLock.png */; };
+		A92AE5091EBA81C9008C0D26 /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = A92AE5081EBA81C9008C0D26 /* avatar.png */; };
+		A92AE51D1EBB9B38008C0D26 /* dell.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A92AE51C1EBB9B38008C0D26 /* dell.jpg */; };
+		A92AE5201EBBB20F008C0D26 /* editIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = A92AE51F1EBBB20F008C0D26 /* editIcon.png */; };
+		A92AE5261EBBB9C8008C0D26 /* uninorte.png in Resources */ = {isa = PBXBuildFile; fileRef = A92AE5251EBBB9C8008C0D26 /* uninorte.png */; };
+		A95865121EC660CE00BE3A05 /* NTWConnectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95865111EC660CE00BE3A05 /* NTWConnectionTableViewCell.swift */; };
+		A965230E1EB8E0E800D948C1 /* Brandon-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A965230D1EB8E0D800D948C1 /* Brandon-Bold.otf */; };
+		A96523131EB8E99200D948C1 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96523121EB8E99200D948C1 /* UIView+Extension.swift */; };
+		A96523151EB8E9B600D948C1 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96523141EB8E9B600D948C1 /* String+Extension.swift */; };
+		A96523191EB90CBC00D948C1 /* NTWColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96523181EB90CBC00D948C1 /* NTWColors.swift */; };
+		A965231C1EB90D7900D948C1 /* UIColor+NTWColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A965231B1EB90D7900D948C1 /* UIColor+NTWColors.swift */; };
+		A965231E1EB90DA900D948C1 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A965231D1EB90DA900D948C1 /* UIColor+Extension.swift */; };
+		A97016A01EC3A41600ED6C83 /* NTWTexlInputAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = A970169F1EC3A41500ED6C83 /* NTWTexlInputAppearance.swift */; };
+		A97016A31EC3AD1000ED6C83 /* NTWAddReplyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97016A21EC3AD1000ED6C83 /* NTWAddReplyViewController.swift */; };
+		A97016A51EC3B14F00ED6C83 /* NTWReplyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97016A41EC3B14F00ED6C83 /* NTWReplyTableViewCell.swift */; };
+		A985ED681EC4B5FA000DEA32 /* NTWInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A985ED671EC4B5FA000DEA32 /* NTWInputTableViewCell.swift */; };
+		A985ED6A1EC4BFD9000DEA32 /* NTWUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A985ED691EC4BFD9000DEA32 /* NTWUser.swift */; };
+		A985ED6D1EC4F6C9000DEA32 /* ProgressInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A985ED6C1EC4F6C9000DEA32 /* ProgressInteractor.swift */; };
+		A985ED6F1EC4FCBA000DEA32 /* MessageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A985ED6E1EC4FCBA000DEA32 /* MessageInteractor.swift */; };
+		A985ED711EC4FE4F000DEA32 /* InputsValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A985ED701EC4FE4F000DEA32 /* InputsValidator.swift */; };
+		A98FB80D1EBD214300F59D87 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98FB80C1EBD214300F59D87 /* UIImage+Extensions.swift */; };
+		A98FB8101EBD265400F59D87 /* NTWProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98FB80E1EBD265400F59D87 /* NTWProfileViewController.swift */; };
+		A98FB8111EBD265400F59D87 /* NTWTagsFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98FB80F1EBD265400F59D87 /* NTWTagsFlowLayout.swift */; };
+		A98FB81A1EBD265E00F59D87 /* NTWExperienceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98FB8121EBD265E00F59D87 /* NTWExperienceTableViewCell.swift */; };
+		A98FB81C1EBD265E00F59D87 /* NTWProfilePictureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98FB8141EBD265E00F59D87 /* NTWProfilePictureTableViewCell.swift */; };
+		A98FB81E1EBD265E00F59D87 /* NTWSwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98FB8161EBD265E00F59D87 /* NTWSwitchTableViewCell.swift */; };
+		A98FB81F1EBD265E00F59D87 /* NTWTagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98FB8171EBD265E00F59D87 /* NTWTagCollectionViewCell.swift */; };
+		A98FB8201EBD265E00F59D87 /* NTWTagsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98FB8181EBD265E00F59D87 /* NTWTagsTableViewCell.swift */; };
+		A98FB8211EBD265E00F59D87 /* NTWTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98FB8191EBD265E00F59D87 /* NTWTitleTableViewCell.swift */; };
+		A98FB8241EBD267A00F59D87 /* NTWPasswordRecoveryConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98FB8221EBD267A00F59D87 /* NTWPasswordRecoveryConfirmationViewController.swift */; };
+		A98FB8251EBD267A00F59D87 /* NTWPasswordRecoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98FB8231EBD267A00F59D87 /* NTWPasswordRecoveryViewController.swift */; };
+		A98FB8271EBD268400F59D87 /* NTWSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98FB8261EBD268400F59D87 /* NTWSignUpViewController.swift */; };
+		A98FB8291EBD268E00F59D87 /* NTWSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98FB8281EBD268E00F59D87 /* NTWSignInViewController.swift */; };
+		A98FB82C1EBD269700F59D87 /* SnackBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98FB82A1EBD269700F59D87 /* SnackBar.swift */; };
+		A98FB82D1EBD269700F59D87 /* SnackBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = A98FB82B1EBD269700F59D87 /* SnackBar.xib */; };
+		A9B6EDA91EB8BDC6004A9064 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B6EDA81EB8BDC6004A9064 /* AppDelegate.swift */; };
+		A9B6EDAE1EB8BDC6004A9064 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9B6EDAC1EB8BDC6004A9064 /* Main.storyboard */; };
+		A9B6EDB01EB8BDC6004A9064 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9B6EDAF1EB8BDC6004A9064 /* Assets.xcassets */; };
+		A9B6EDB31EB8BDC6004A9064 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9B6EDB11EB8BDC6004A9064 /* LaunchScreen.storyboard */; };
+		A9B6EDBE1EB8BDC7004A9064 /* NetworkdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B6EDBD1EB8BDC7004A9064 /* NetworkdTests.swift */; };
+		A9B6EDC91EB8BDC7004A9064 /* NetworkdUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B6EDC81EB8BDC7004A9064 /* NetworkdUITests.swift */; };
+		A9D54D771EC5F54A00A78FAD /* NTWAnimatedLaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D54D761EC5F54A00A78FAD /* NTWAnimatedLaunchScreenViewController.swift */; };
+		A9D54D811EC6439A00A78FAD /* NTWCreateConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D54D7F1EC6439A00A78FAD /* NTWCreateConnectionViewController.swift */; };
+		A9D54D8C1EC6499000A78FAD /* NTWConnectiosPagesParenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D54D8B1EC6499000A78FAD /* NTWConnectiosPagesParenViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9B6EDBA1EB8BDC7004A9064 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9B6ED9D1EB8BDC6004A9064 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9B6EDA41EB8BDC6004A9064;
+			remoteInfo = Networkd;
+		};
+		A9B6EDC51EB8BDC7004A9064 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9B6ED9D1EB8BDC6004A9064 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9B6EDA41EB8BDC6004A9064;
+			remoteInfo = Networkd;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		27B478FA4FB75270A0B7F9E4 /* Pods_NetworkdTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkdTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F1B268A1EC01DEB0003AA7A /* RPUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RPUser.swift; path = UserRepo/Models/RPUser.swift; sourceTree = "<group>"; };
+		4F1B268C1EC01E130003AA7A /* RPError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RPError.swift; path = UserRepo/Models/RPError.swift; sourceTree = "<group>"; };
+		4F1B268F1EC0A6290003AA7A /* login.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = login.plist; path = UserRepoTest/CloudStorageTest/resources/login.plist; sourceTree = "<group>"; };
+		4F1B26911EC0A7650003AA7A /* RPConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RPConstants.swift; path = UserRepo/Models/RPConstants.swift; sourceTree = "<group>"; };
+		4F1B26931EC0D14C0003AA7A /* RPWorkExperience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RPWorkExperience.swift; path = UserRepo/Models/RPWorkExperience.swift; sourceTree = "<group>"; };
+		4F1B26961EC0F4140003AA7A /* RPEducation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RPEducation.swift; path = UserRepo/Models/RPEducation.swift; sourceTree = "<group>"; };
+		4F1B26981EC1055D0003AA7A /* RPInterest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RPInterest.swift; path = UserRepo/Models/RPInterest.swift; sourceTree = "<group>"; };
+		4F1B269A1EC10AA90003AA7A /* RPSkill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RPSkill.swift; path = UserRepo/Models/RPSkill.swift; sourceTree = "<group>"; };
+		4F1D5D691EC3E62800A31AA8 /* BaseInteractorTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseInteractorTest.swift; path = InteractorsTest/BaseInteractorTest.swift; sourceTree = "<group>"; };
+		4F670E251EC16D6C00C12AEB /* login_wrong.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = login_wrong.plist; path = UserRepoTest/CloudStorageTest/resources/login_wrong.plist; sourceTree = "<group>"; };
+		4F670E291EC1FCF700C12AEB /* LocalStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalStorage.swift; path = UserRepo/LocalStorage/LocalStorage.swift; sourceTree = "<group>"; };
+		4F670E2B1EC2073100C12AEB /* UserRepo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserRepo.swift; path = UserRepo/UserRepo.swift; sourceTree = "<group>"; };
+		4F670E2E1EC21BB800C12AEB /* NTWWorkExperience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTWWorkExperience.swift; path = Interactors/Models/NTWWorkExperience.swift; sourceTree = "<group>"; };
+		4F670E301EC21C5F00C12AEB /* NTWEducation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTWEducation.swift; path = Interactors/Models/NTWEducation.swift; sourceTree = "<group>"; };
+		4F670E321EC21D6000C12AEB /* NTWInterest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTWInterest.swift; path = Interactors/Models/NTWInterest.swift; sourceTree = "<group>"; };
+		4F670E341EC23B4D00C12AEB /* NTWSkills.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTWSkills.swift; path = Interactors/Models/NTWSkills.swift; sourceTree = "<group>"; };
+		4F670E361EC2523C00C12AEB /* SignInInteractorTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInInteractorTest.swift; path = InteractorsTest/SignInInteractorTest.swift; sourceTree = "<group>"; };
+		4F670E391EC2537200C12AEB /* LocalFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalFake.swift; path = UserRepoTest/LocalStorageTest/LocalFake.swift; sourceTree = "<group>"; };
+		4F670E3C1EC2547B00C12AEB /* BaseViewFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewFake.swift; path = ViewTest/BaseViewFake.swift; sourceTree = "<group>"; };
+		4F670E3E1EC2B78E00C12AEB /* RPSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RPSession.swift; path = UserRepo/Models/RPSession.swift; sourceTree = "<group>"; };
+		4F670E401EC2B83000C12AEB /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = File.swift; path = Interactors/Models/File.swift; sourceTree = "<group>"; };
+		4F670E421EC3499F00C12AEB /* signup.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = signup.plist; path = UserRepoTest/CloudStorageTest/resources/signup.plist; sourceTree = "<group>"; };
+		4F670E441EC36C0700C12AEB /* gravatar.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = gravatar.plist; path = UserRepoTest/CloudStorageTest/resources/gravatar.plist; sourceTree = "<group>"; };
+		4F670E461EC371EC00C12AEB /* RPGravatar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RPGravatar.swift; path = UserRepo/Models/RPGravatar.swift; sourceTree = "<group>"; };
+		4F670E4A1EC3737A00C12AEB /* NTWGravatar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTWGravatar.swift; path = Interactors/Models/NTWGravatar.swift; sourceTree = "<group>"; };
+		4F7B43321EBD03C50026263B /* SignInInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInInteractor.swift; path = Interactors/SignInInteractor.swift; sourceTree = "<group>"; };
+		4F7B43341EBD04020026263B /* BaseInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseInteractor.swift; path = Interactors/BaseInteractor.swift; sourceTree = "<group>"; };
+		4F7B43371EBD04FA0026263B /* BasePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BasePresenter.swift; path = Presenters/BasePresenter.swift; sourceTree = "<group>"; };
+		4F7B433A1EBD08D80026263B /* NetworkdTestSuite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkdTestSuite.swift; path = TestSuite/NetworkdTestSuite.swift; sourceTree = "<group>"; };
+		4F7B43421EBD65D50026263B /* CloudStorageTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CloudStorageTest.swift; path = UserRepoTest/CloudStorageTest/CloudStorageTest.swift; sourceTree = "<group>"; };
+		4F9079871EC3F82F001761B0 /* ResetPasswordInteractorTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResetPasswordInteractorTest.swift; path = InteractorsTest/ResetPasswordInteractorTest.swift; sourceTree = "<group>"; };
+		4F9079891EC3FC7A001761B0 /* error_reset_pass.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = error_reset_pass.plist; path = UserRepoTest/CloudStorageTest/resources/error_reset_pass.plist; sourceTree = "<group>"; };
+		4F90798A1EC3FC7A001761B0 /* success.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = success.plist; path = UserRepoTest/CloudStorageTest/resources/success.plist; sourceTree = "<group>"; };
+		4F90798D1EC40D60001761B0 /* ResetPassInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResetPassInteractor.swift; path = Interactors/ResetPassInteractor.swift; sourceTree = "<group>"; };
+		4F90798F1EC40DB2001761B0 /* NTWSuccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTWSuccess.swift; path = Interactors/Models/NTWSuccess.swift; sourceTree = "<group>"; };
+		4F9079911EC415D7001761B0 /* RPSuccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RPSuccess.swift; path = UserRepo/Models/RPSuccess.swift; sourceTree = "<group>"; };
+		4FB4ADCA1EBF4C8200498CEB /* CloudStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CloudStorage.swift; path = UserRepo/CloudStorage/CloudStorage.swift; sourceTree = "<group>"; };
+		4FB4ADCC1EBF4DF700498CEB /* NetworkdAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkdAdapter.swift; path = UserRepo/CloudStorage/NetworkdAdapter.swift; sourceTree = "<group>"; };
+		4FB4ADCF1EBF69C200498CEB /* NetworkFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkFake.swift; path = UserRepoTest/CloudStorageTest/Models/NetworkFake.swift; sourceTree = "<group>"; };
+		9F49C5C269933064E5CBBC59 /* Pods-Networkd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Networkd.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Networkd/Pods-Networkd.debug.xcconfig"; sourceTree = "<group>"; };
+		A906666B1EC1F5060091C838 /* NTWButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTWButtonTableViewCell.swift; path = Controllers/Profile/Cells/NTWButtonTableViewCell.swift; sourceTree = "<group>"; };
+		A906666E1EC201090091C838 /* NTWAddEducationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTWAddEducationViewController.swift; path = Controllers/AddEducation/NTWAddEducationViewController.swift; sourceTree = "<group>"; };
+		A90666711EC22ADC0091C838 /* NTWNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTWNewsViewController.swift; path = Controllers/News/NTWNewsViewController.swift; sourceTree = "<group>"; };
+		A90666731EC246C10091C838 /* NTWNewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTWNewsTableViewCell.swift; path = Controllers/Profile/Cells/NTWNewsTableViewCell.swift; sourceTree = "<group>"; };
+		A90666761EC26F710091C838 /* NTWCreateAPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTWCreateAPostViewController.swift; path = Controllers/CreateAPost/NTWCreateAPostViewController.swift; sourceTree = "<group>"; };
+		A91C9C481EC0A18700FAEE13 /* NTWAddWorkExperienceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTWAddWorkExperienceViewController.swift; path = Controllers/AddWorkExperience/NTWAddWorkExperienceViewController.swift; sourceTree = "<group>"; };
+		A91C9C4A1EC0CC9500FAEE13 /* appleLogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = appleLogo.jpg; path = Resources/Images/appleLogo.jpg; sourceTree = "<group>"; };
+		A91C9C501EC11BD800FAEE13 /* NTWSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTWSearchViewController.swift; path = Controllers/Search/NTWSearchViewController.swift; sourceTree = "<group>"; };
+		A92A3EA71EBA0FDA00D75AC4 /* NTWGlobalAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTWGlobalAppearance.swift; path = Helpers/Appearence/NTWGlobalAppearance.swift; sourceTree = "<group>"; };
+		A92AE4FE1EBA7595008C0D26 /* padLock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = padLock.png; path = Resources/Images/padLock.png; sourceTree = "<group>"; };
+		A92AE5081EBA81C9008C0D26 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = avatar.png; path = Resources/Images/avatar.png; sourceTree = "<group>"; };
+		A92AE51C1EBB9B38008C0D26 /* dell.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dell.jpg; path = Resources/Images/dell.jpg; sourceTree = "<group>"; };
+		A92AE51F1EBBB20F008C0D26 /* editIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = editIcon.png; path = Resources/Images/editIcon.png; sourceTree = "<group>"; };
+		A92AE5251EBBB9C8008C0D26 /* uninorte.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = uninorte.png; path = Resources/Images/uninorte.png; sourceTree = "<group>"; };
+		A95865111EC660CE00BE3A05 /* NTWConnectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTWConnectionTableViewCell.swift; path = Controllers/Profile/Cells/NTWConnectionTableViewCell.swift; sourceTree = "<group>"; };
+		A965230D1EB8E0D800D948C1 /* Brandon-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Brandon-Bold.otf"; path = "Resources/Fonts/Brandon/Brandon-Bold.otf"; sourceTree = "<group>"; };
+		A96523121EB8E99200D948C1 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Extension.swift"; path = "Extensions/UIKit/UIView/UIView+Extension.swift"; sourceTree = "<group>"; };
+		A96523141EB8E9B600D948C1 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "Extensions/Foundation/String/String+Extension.swift"; sourceTree = "<group>"; };
+		A96523181EB90CBC00D948C1 /* NTWColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTWColors.swift; path = Constants/NTWColors.swift; sourceTree = "<group>"; };
+		A965231B1EB90D7900D948C1 /* UIColor+NTWColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+NTWColors.swift"; path = "Extensions/UIKit/UIColor/UIColor+NTWColors.swift"; sourceTree = "<group>"; };
+		A965231D1EB90DA900D948C1 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "Extensions/UIKit/UIColor/UIColor+Extension.swift"; sourceTree = "<group>"; };
+		A970169F1EC3A41500ED6C83 /* NTWTexlInputAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTWTexlInputAppearance.swift; path = Helpers/Appearence/NTWTexlInputAppearance.swift; sourceTree = "<group>"; };
+		A97016A21EC3AD1000ED6C83 /* NTWAddReplyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTWAddReplyViewController.swift; path = Controllers/AddReply/NTWAddReplyViewController.swift; sourceTree = "<group>"; };
+		A97016A41EC3B14F00ED6C83 /* NTWReplyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTWReplyTableViewCell.swift; path = Controllers/Profile/Cells/NTWReplyTableViewCell.swift; sourceTree = "<group>"; };
+		A985ED671EC4B5FA000DEA32 /* NTWInputTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTWInputTableViewCell.swift; path = Controllers/Profile/Cells/NTWInputTableViewCell.swift; sourceTree = "<group>"; };
+		A985ED691EC4BFD9000DEA32 /* NTWUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTWUser.swift; path = Interactors/Models/NTWUser.swift; sourceTree = "<group>"; };
+		A985ED6C1EC4F6C9000DEA32 /* ProgressInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgressInteractor.swift; path = Utils/ProgressInteractor.swift; sourceTree = "<group>"; };
+		A985ED6E1EC4FCBA000DEA32 /* MessageInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageInteractor.swift; path = Utils/MessageInteractor.swift; sourceTree = "<group>"; };
+		A985ED701EC4FE4F000DEA32 /* InputsValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InputsValidator.swift; path = Utils/InputsValidator.swift; sourceTree = "<group>"; };
+		A98FB80C1EBD214300F59D87 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Extensions.swift"; path = "Extensions/UIKit/UIImage/UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		A98FB80E1EBD265400F59D87 /* NTWProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTWProfileViewController.swift; path = Controllers/Profile/NTWProfileViewController.swift; sourceTree = "<group>"; };
+		A98FB80F1EBD265400F59D87 /* NTWTagsFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTWTagsFlowLayout.swift; path = Controllers/Profile/NTWTagsFlowLayout.swift; sourceTree = "<group>"; };
+		A98FB8121EBD265E00F59D87 /* NTWExperienceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTWExperienceTableViewCell.swift; path = Controllers/Profile/Cells/NTWExperienceTableViewCell.swift; sourceTree = "<group>"; };
+		A98FB8141EBD265E00F59D87 /* NTWProfilePictureTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTWProfilePictureTableViewCell.swift; path = Controllers/Profile/Cells/NTWProfilePictureTableViewCell.swift; sourceTree = "<group>"; };
+		A98FB8161EBD265E00F59D87 /* NTWSwitchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTWSwitchTableViewCell.swift; path = Controllers/Profile/Cells/NTWSwitchTableViewCell.swift; sourceTree = "<group>"; };
+		A98FB8171EBD265E00F59D87 /* NTWTagCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTWTagCollectionViewCell.swift; path = Controllers/Profile/Cells/NTWTagCollectionViewCell.swift; sourceTree = "<group>"; };
+		A98FB8181EBD265E00F59D87 /* NTWTagsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTWTagsTableViewCell.swift; path = Controllers/Profile/Cells/NTWTagsTableViewCell.swift; sourceTree = "<group>"; };
+		A98FB8191EBD265E00F59D87 /* NTWTitleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTWTitleTableViewCell.swift; path = Controllers/Profile/Cells/NTWTitleTableViewCell.swift; sourceTree = "<group>"; };
+		A98FB8221EBD267A00F59D87 /* NTWPasswordRecoveryConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTWPasswordRecoveryConfirmationViewController.swift; path = Controllers/PasswordRecovery/NTWPasswordRecoveryConfirmationViewController.swift; sourceTree = "<group>"; };
+		A98FB8231EBD267A00F59D87 /* NTWPasswordRecoveryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTWPasswordRecoveryViewController.swift; path = Controllers/PasswordRecovery/NTWPasswordRecoveryViewController.swift; sourceTree = "<group>"; };
+		A98FB8261EBD268400F59D87 /* NTWSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTWSignUpViewController.swift; path = Controllers/SignUp/NTWSignUpViewController.swift; sourceTree = "<group>"; };
+		A98FB8281EBD268E00F59D87 /* NTWSignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTWSignInViewController.swift; path = Controllers/SignIn/NTWSignInViewController.swift; sourceTree = "<group>"; };
+		A98FB82A1EBD269700F59D87 /* SnackBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnackBar.swift; path = Controllers/SnackBar/SnackBar.swift; sourceTree = "<group>"; };
+		A98FB82B1EBD269700F59D87 /* SnackBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SnackBar.xib; path = Controllers/SnackBar/SnackBar.xib; sourceTree = "<group>"; };
+		A9B6EDA51EB8BDC6004A9064 /* Networkd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Networkd.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9B6EDA81EB8BDC6004A9064 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A9B6EDAD1EB8BDC6004A9064 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9B6EDAF1EB8BDC6004A9064 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9B6EDB21EB8BDC6004A9064 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A9B6EDB41EB8BDC6004A9064 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9B6EDB91EB8BDC7004A9064 /* NetworkdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkdTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9B6EDBD1EB8BDC7004A9064 /* NetworkdTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkdTests.swift; sourceTree = "<group>"; };
+		A9B6EDBF1EB8BDC7004A9064 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9B6EDC41EB8BDC7004A9064 /* NetworkdUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkdUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9B6EDC81EB8BDC7004A9064 /* NetworkdUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkdUITests.swift; sourceTree = "<group>"; };
+		A9B6EDCA1EB8BDC7004A9064 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9D54D761EC5F54A00A78FAD /* NTWAnimatedLaunchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTWAnimatedLaunchScreenViewController.swift; path = Controllers/AnimatedLaunchScreen/NTWAnimatedLaunchScreenViewController.swift; sourceTree = "<group>"; };
+		A9D54D7F1EC6439A00A78FAD /* NTWCreateConnectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTWCreateConnectionViewController.swift; path = Controllers/CreateConnection/NTWCreateConnectionViewController.swift; sourceTree = "<group>"; };
+		A9D54D8B1EC6499000A78FAD /* NTWConnectiosPagesParenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTWConnectiosPagesParenViewController.swift; path = Controllers/CreateConnection/NTWConnectiosPagesParenViewController.swift; sourceTree = "<group>"; };
+		C3246C6A256EEB75126D9CC1 /* Pods-NetworkdTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkdTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkdTests/Pods-NetworkdTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E75D18D30374D9734EAB389D /* Pods-Networkd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Networkd.release.xcconfig"; path = "Pods/Target Support Files/Pods-Networkd/Pods-Networkd.release.xcconfig"; sourceTree = "<group>"; };
+		EA878E9E8C839059DA879910 /* Pods_Networkd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Networkd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEA55EF2911A6FFC42A8AD0F /* Pods-NetworkdTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkdTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkdTests/Pods-NetworkdTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9B6EDA21EB8BDC6004A9064 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04A61BB37BB923BAF3CF06CD /* Pods_Networkd.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9B6EDB61EB8BDC7004A9064 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0823EEE41946CA450724218A /* Pods_NetworkdTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9B6EDC11EB8BDC7004A9064 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BD0417E0D81502CCC9B3C20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA878E9E8C839059DA879910 /* Pods_Networkd.framework */,
+				27B478FA4FB75270A0B7F9E4 /* Pods_NetworkdTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		26E44A02DCB540602C8075B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F49C5C269933064E5CBBC59 /* Pods-Networkd.debug.xcconfig */,
+				E75D18D30374D9734EAB389D /* Pods-Networkd.release.xcconfig */,
+				C3246C6A256EEB75126D9CC1 /* Pods-NetworkdTests.debug.xcconfig */,
+				FEA55EF2911A6FFC42A8AD0F /* Pods-NetworkdTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4F1B26891EC01DB90003AA7A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4F1B268A1EC01DEB0003AA7A /* RPUser.swift */,
+				4F1B268C1EC01E130003AA7A /* RPError.swift */,
+				4F1B26911EC0A7650003AA7A /* RPConstants.swift */,
+				4F1B26931EC0D14C0003AA7A /* RPWorkExperience.swift */,
+				4F1B26961EC0F4140003AA7A /* RPEducation.swift */,
+				4F1B26981EC1055D0003AA7A /* RPInterest.swift */,
+				4F1B269A1EC10AA90003AA7A /* RPSkill.swift */,
+				4F670E3E1EC2B78E00C12AEB /* RPSession.swift */,
+				4F670E461EC371EC00C12AEB /* RPGravatar.swift */,
+				4F9079911EC415D7001761B0 /* RPSuccess.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		4F1B268E1EC09CB60003AA7A /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				4F9079891EC3FC7A001761B0 /* error_reset_pass.plist */,
+				4F90798A1EC3FC7A001761B0 /* success.plist */,
+				4F670E441EC36C0700C12AEB /* gravatar.plist */,
+				4F670E421EC3499F00C12AEB /* signup.plist */,
+				4F670E251EC16D6C00C12AEB /* login_wrong.plist */,
+				4F1B268F1EC0A6290003AA7A /* login.plist */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		4F670E2D1EC21B9B00C12AEB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A985ED691EC4BFD9000DEA32 /* NTWUser.swift */,
+				4F670E2E1EC21BB800C12AEB /* NTWWorkExperience.swift */,
+				4F670E301EC21C5F00C12AEB /* NTWEducation.swift */,
+				4F670E321EC21D6000C12AEB /* NTWInterest.swift */,
+				4F670E341EC23B4D00C12AEB /* NTWSkills.swift */,
+				4F670E401EC2B83000C12AEB /* File.swift */,
+				4F670E4A1EC3737A00C12AEB /* NTWGravatar.swift */,
+				4F90798F1EC40DB2001761B0 /* NTWSuccess.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		4F670E381EC2534100C12AEB /* LocalStorageTest */ = {
+			isa = PBXGroup;
+			children = (
+				4F670E391EC2537200C12AEB /* LocalFake.swift */,
+			);
+			name = LocalStorageTest;
+			sourceTree = "<group>";
+		};
+		4F670E3B1EC2545700C12AEB /* ViewTest */ = {
+			isa = PBXGroup;
+			children = (
+				4F670E3C1EC2547B00C12AEB /* BaseViewFake.swift */,
+			);
+			name = ViewTest;
+			sourceTree = "<group>";
+		};
+		4F7B432F1EBD03460026263B /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				4F670E2D1EC21B9B00C12AEB /* Models */,
+				4F7B43321EBD03C50026263B /* SignInInteractor.swift */,
+				4F7B43341EBD04020026263B /* BaseInteractor.swift */,
+				4F90798D1EC40D60001761B0 /* ResetPassInteractor.swift */,
+			);
+			name = Interactors;
+			sourceTree = "<group>";
+		};
+		4F7B43361EBD04CE0026263B /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				4F7B43371EBD04FA0026263B /* BasePresenter.swift */,
+			);
+			name = Presenters;
+			sourceTree = "<group>";
+		};
+		4F7B433C1EBD10480026263B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4FB4ADC71EBF4BC600498CEB /* UserRepo */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		4F7B433D1EBD5B670026263B /* InteractorsTest */ = {
+			isa = PBXGroup;
+			children = (
+				4F670E361EC2523C00C12AEB /* SignInInteractorTest.swift */,
+				4F1D5D691EC3E62800A31AA8 /* BaseInteractorTest.swift */,
+				4F9079871EC3F82F001761B0 /* ResetPasswordInteractorTest.swift */,
+			);
+			name = InteractorsTest;
+			sourceTree = "<group>";
+		};
+		4F7B43401EBD5F960026263B /* UserRepoTest */ = {
+			isa = PBXGroup;
+			children = (
+				4F670E381EC2534100C12AEB /* LocalStorageTest */,
+				4F7B43411EBD60BA0026263B /* CloudStorageTest */,
+			);
+			name = UserRepoTest;
+			sourceTree = "<group>";
+		};
+		4F7B43411EBD60BA0026263B /* CloudStorageTest */ = {
+			isa = PBXGroup;
+			children = (
+				4F1B268E1EC09CB60003AA7A /* resources */,
+				4FB4ADCE1EBF699D00498CEB /* Models */,
+				4F7B43421EBD65D50026263B /* CloudStorageTest.swift */,
+			);
+			name = CloudStorageTest;
+			sourceTree = "<group>";
+		};
+		4FB4ADC71EBF4BC600498CEB /* UserRepo */ = {
+			isa = PBXGroup;
+			children = (
+				4F1B26891EC01DB90003AA7A /* Models */,
+				4FB4ADC91EBF4BE800498CEB /* LocalStorage */,
+				4FB4ADC81EBF4BD600498CEB /* CloudStorage */,
+				4F670E2B1EC2073100C12AEB /* UserRepo.swift */,
+			);
+			name = UserRepo;
+			sourceTree = "<group>";
+		};
+		4FB4ADC81EBF4BD600498CEB /* CloudStorage */ = {
+			isa = PBXGroup;
+			children = (
+				4FB4ADCA1EBF4C8200498CEB /* CloudStorage.swift */,
+				4FB4ADCC1EBF4DF700498CEB /* NetworkdAdapter.swift */,
+			);
+			name = CloudStorage;
+			sourceTree = "<group>";
+		};
+		4FB4ADC91EBF4BE800498CEB /* LocalStorage */ = {
+			isa = PBXGroup;
+			children = (
+				4F670E291EC1FCF700C12AEB /* LocalStorage.swift */,
+			);
+			name = LocalStorage;
+			sourceTree = "<group>";
+		};
+		4FB4ADCE1EBF699D00498CEB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4FB4ADCF1EBF69C200498CEB /* NetworkFake.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A906666D1EC200C20091C838 /* AddEducation */ = {
+			isa = PBXGroup;
+			children = (
+				A906666E1EC201090091C838 /* NTWAddEducationViewController.swift */,
+			);
+			name = AddEducation;
+			sourceTree = "<group>";
+		};
+		A90666701EC22AB70091C838 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				A90666711EC22ADC0091C838 /* NTWNewsViewController.swift */,
+			);
+			name = News;
+			sourceTree = "<group>";
+		};
+		A90666751EC26D750091C838 /* CreateAPost */ = {
+			isa = PBXGroup;
+			children = (
+				A90666761EC26F710091C838 /* NTWCreateAPostViewController.swift */,
+			);
+			name = CreateAPost;
+			sourceTree = "<group>";
+		};
+		A91C9C471EC0A12900FAEE13 /* AddWorkExperience */ = {
+			isa = PBXGroup;
+			children = (
+				A91C9C481EC0A18700FAEE13 /* NTWAddWorkExperienceViewController.swift */,
+			);
+			name = AddWorkExperience;
+			sourceTree = "<group>";
+		};
+		A91C9C4C1EC0D97A00FAEE13 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				A91C9C501EC11BD800FAEE13 /* NTWSearchViewController.swift */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		A92AE4FD1EBA756B008C0D26 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A92AE4FE1EBA7595008C0D26 /* padLock.png */,
+				A92AE5081EBA81C9008C0D26 /* avatar.png */,
+				A92AE51C1EBB9B38008C0D26 /* dell.jpg */,
+				A92AE51F1EBBB20F008C0D26 /* editIcon.png */,
+				A92AE5251EBBB9C8008C0D26 /* uninorte.png */,
+				A91C9C4A1EC0CC9500FAEE13 /* appleLogo.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		A92AE50A1EBB5AF6008C0D26 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				A98FB80E1EBD265400F59D87 /* NTWProfileViewController.swift */,
+				A98FB80F1EBD265400F59D87 /* NTWTagsFlowLayout.swift */,
+				A92AE50D1EBB6707008C0D26 /* Cells */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		A92AE50D1EBB6707008C0D26 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A906666B1EC1F5060091C838 /* NTWButtonTableViewCell.swift */,
+				A98FB8191EBD265E00F59D87 /* NTWTitleTableViewCell.swift */,
+				A98FB8121EBD265E00F59D87 /* NTWExperienceTableViewCell.swift */,
+				A985ED671EC4B5FA000DEA32 /* NTWInputTableViewCell.swift */,
+				A98FB8141EBD265E00F59D87 /* NTWProfilePictureTableViewCell.swift */,
+				A98FB8161EBD265E00F59D87 /* NTWSwitchTableViewCell.swift */,
+				A98FB8171EBD265E00F59D87 /* NTWTagCollectionViewCell.swift */,
+				A98FB8181EBD265E00F59D87 /* NTWTagsTableViewCell.swift */,
+				A90666731EC246C10091C838 /* NTWNewsTableViewCell.swift */,
+				A97016A41EC3B14F00ED6C83 /* NTWReplyTableViewCell.swift */,
+				A95865111EC660CE00BE3A05 /* NTWConnectionTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		A954BE0B1EBA1F5900D3DC7E /* PasswordRecovery */ = {
+			isa = PBXGroup;
+			children = (
+				A98FB8231EBD267A00F59D87 /* NTWPasswordRecoveryViewController.swift */,
+				A98FB8221EBD267A00F59D87 /* NTWPasswordRecoveryConfirmationViewController.swift */,
+			);
+			name = PasswordRecovery;
+			sourceTree = "<group>";
+		};
+		A96523051EB8D17000D948C1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A96523101EB8E95400D948C1 /* Foundation */,
+				A96523061EB8D18200D948C1 /* UIKit */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		A96523061EB8D18200D948C1 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				A98FB80B1EBD212900F59D87 /* UIImage */,
+				A96523071EB8D1B100D948C1 /* UIView */,
+				A965231A1EB90D4600D948C1 /* UIColor */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		A96523071EB8D1B100D948C1 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				A96523121EB8E99200D948C1 /* UIView+Extension.swift */,
+			);
+			name = UIView;
+			sourceTree = "<group>";
+		};
+		A965230A1EB8E0AC00D948C1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A965230B1EB8E0C200D948C1 /* Fonts */,
+				A92AE4FD1EBA756B008C0D26 /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A965230B1EB8E0C200D948C1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A965230C1EB8E0C700D948C1 /* Brandon */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		A965230C1EB8E0C700D948C1 /* Brandon */ = {
+			isa = PBXGroup;
+			children = (
+				A965230D1EB8E0D800D948C1 /* Brandon-Bold.otf */,
+			);
+			name = Brandon;
+			sourceTree = "<group>";
+		};
+		A96523101EB8E95400D948C1 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				A96523111EB8E96B00D948C1 /* String */,
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
+		A96523111EB8E96B00D948C1 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				A96523141EB8E9B600D948C1 /* String+Extension.swift */,
+			);
+			name = String;
+			sourceTree = "<group>";
+		};
+		A96523171EB90C7000D948C1 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A96523181EB90CBC00D948C1 /* NTWColors.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		A965231A1EB90D4600D948C1 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				A965231D1EB90DA900D948C1 /* UIColor+Extension.swift */,
+				A965231B1EB90D7900D948C1 /* UIColor+NTWColors.swift */,
+			);
+			name = UIColor;
+			sourceTree = "<group>";
+		};
+		A96523231EB91FA300D948C1 /* SnackBar */ = {
+			isa = PBXGroup;
+			children = (
+				A98FB82A1EBD269700F59D87 /* SnackBar.swift */,
+				A98FB82B1EBD269700F59D87 /* SnackBar.xib */,
+			);
+			name = SnackBar;
+			sourceTree = "<group>";
+		};
+		A965232E1EB92AB000D948C1 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				A98FB8261EBD268400F59D87 /* NTWSignUpViewController.swift */,
+			);
+			name = SignUp;
+			sourceTree = "<group>";
+		};
+		A97016A11EC3ACEB00ED6C83 /* AddReply */ = {
+			isa = PBXGroup;
+			children = (
+				A97016A21EC3AD1000ED6C83 /* NTWAddReplyViewController.swift */,
+			);
+			name = AddReply;
+			sourceTree = "<group>";
+		};
+		A985ED6B1EC4F6A7000DEA32 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A985ED6C1EC4F6C9000DEA32 /* ProgressInteractor.swift */,
+				A985ED6E1EC4FCBA000DEA32 /* MessageInteractor.swift */,
+				A985ED701EC4FE4F000DEA32 /* InputsValidator.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		A98FB80B1EBD212900F59D87 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				A98FB80C1EBD214300F59D87 /* UIImage+Extensions.swift */,
+			);
+			name = UIImage;
+			sourceTree = "<group>";
+		};
+		A9B6ED9C1EB8BDC6004A9064 = {
+			isa = PBXGroup;
+			children = (
+				A9B6EDA71EB8BDC6004A9064 /* Networkd */,
+				A9B6EDBC1EB8BDC7004A9064 /* NetworkdTests */,
+				A9B6EDC71EB8BDC7004A9064 /* NetworkdUITests */,
+				A9B6EDA61EB8BDC6004A9064 /* Products */,
+				26E44A02DCB540602C8075B8 /* Pods */,
+				0BD0417E0D81502CCC9B3C20 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A9B6EDA61EB8BDC6004A9064 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9B6EDA51EB8BDC6004A9064 /* Networkd.app */,
+				A9B6EDB91EB8BDC7004A9064 /* NetworkdTests.xctest */,
+				A9B6EDC41EB8BDC7004A9064 /* NetworkdUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9B6EDA71EB8BDC6004A9064 /* Networkd */ = {
+			isa = PBXGroup;
+			children = (
+				A9B6EDA81EB8BDC6004A9064 /* AppDelegate.swift */,
+				A9B6EDAC1EB8BDC6004A9064 /* Main.storyboard */,
+				A9B6EDAF1EB8BDC6004A9064 /* Assets.xcassets */,
+				A9B6EDB11EB8BDC6004A9064 /* LaunchScreen.storyboard */,
+				A9B6EDB41EB8BDC6004A9064 /* Info.plist */,
+				4F7B433C1EBD10480026263B /* Data */,
+				4F7B43361EBD04CE0026263B /* Presenters */,
+				4F7B432F1EBD03460026263B /* Interactors */,
+				A9B6EDD61EB8BF94004A9064 /* Controllers */,
+				A96523051EB8D17000D948C1 /* Extensions */,
+				A965230A1EB8E0AC00D948C1 /* Resources */,
+				A985ED6B1EC4F6A7000DEA32 /* Utils */,
+				A96523171EB90C7000D948C1 /* Constants */,
+				A9B6EDDF1EB8C2E1004A9064 /* Helpers */,
+			);
+			path = Networkd;
+			sourceTree = "<group>";
+		};
+		A9B6EDBC1EB8BDC7004A9064 /* NetworkdTests */ = {
+			isa = PBXGroup;
+			children = (
+				4F670E3B1EC2545700C12AEB /* ViewTest */,
+				4F7B43401EBD5F960026263B /* UserRepoTest */,
+				4F7B433D1EBD5B670026263B /* InteractorsTest */,
+				A9B6EDBD1EB8BDC7004A9064 /* NetworkdTests.swift */,
+				A9B6EDBF1EB8BDC7004A9064 /* Info.plist */,
+				4F7B433A1EBD08D80026263B /* NetworkdTestSuite.swift */,
+			);
+			path = NetworkdTests;
+			sourceTree = "<group>";
+		};
+		A9B6EDC71EB8BDC7004A9064 /* NetworkdUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A9B6EDC81EB8BDC7004A9064 /* NetworkdUITests.swift */,
+				A9B6EDCA1EB8BDC7004A9064 /* Info.plist */,
+			);
+			path = NetworkdUITests;
+			sourceTree = "<group>";
+		};
+		A9B6EDD61EB8BF94004A9064 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A9D54D751EC5F47700A78FAD /* AnimatedLauchScreen */,
+				A9B6EDD71EB8BFA7004A9064 /* SignIn */,
+				A965232E1EB92AB000D948C1 /* SignUp */,
+				A954BE0B1EBA1F5900D3DC7E /* PasswordRecovery */,
+				A90666701EC22AB70091C838 /* News */,
+				A90666751EC26D750091C838 /* CreateAPost */,
+				A97016A11EC3ACEB00ED6C83 /* AddReply */,
+				A9D54D7A1EC623D700A78FAD /* CreateConnection */,
+				A92AE50A1EBB5AF6008C0D26 /* Profile */,
+				A91C9C471EC0A12900FAEE13 /* AddWorkExperience */,
+				A906666D1EC200C20091C838 /* AddEducation */,
+				A91C9C4C1EC0D97A00FAEE13 /* Search */,
+				A96523231EB91FA300D948C1 /* SnackBar */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A9B6EDD71EB8BFA7004A9064 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				A98FB8281EBD268E00F59D87 /* NTWSignInViewController.swift */,
+			);
+			name = SignIn;
+			sourceTree = "<group>";
+		};
+		A9B6EDDF1EB8C2E1004A9064 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A9B6EDE01EB8C314004A9064 /* Appearence */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		A9B6EDE01EB8C314004A9064 /* Appearence */ = {
+			isa = PBXGroup;
+			children = (
+				A92A3EA71EBA0FDA00D75AC4 /* NTWGlobalAppearance.swift */,
+				A970169F1EC3A41500ED6C83 /* NTWTexlInputAppearance.swift */,
+			);
+			name = Appearence;
+			sourceTree = "<group>";
+		};
+		A9D54D751EC5F47700A78FAD /* AnimatedLauchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A9D54D761EC5F54A00A78FAD /* NTWAnimatedLaunchScreenViewController.swift */,
+			);
+			name = AnimatedLauchScreen;
+			sourceTree = "<group>";
+		};
+		A9D54D7A1EC623D700A78FAD /* CreateConnection */ = {
+			isa = PBXGroup;
+			children = (
+				A9D54D7F1EC6439A00A78FAD /* NTWCreateConnectionViewController.swift */,
+				A9D54D8B1EC6499000A78FAD /* NTWConnectiosPagesParenViewController.swift */,
+			);
+			name = CreateConnection;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9B6EDA41EB8BDC6004A9064 /* Networkd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9B6EDCD1EB8BDC7004A9064 /* Build configuration list for PBXNativeTarget "Networkd" */;
+			buildPhases = (
+				9FD4BA51C96DBC2F19236D69 /* [CP] Check Pods Manifest.lock */,
+				A9B6EDA11EB8BDC6004A9064 /* Sources */,
+				A9B6EDA21EB8BDC6004A9064 /* Frameworks */,
+				A9B6EDA31EB8BDC6004A9064 /* Resources */,
+				4D82E63CCE2226AB27126972 /* [CP] Embed Pods Frameworks */,
+				40B7FC27BB717B6D2B27B41F /* [CP] Copy Pods Resources */,
+				A902282C1EC346B6008A2A38 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Networkd;
+			productName = Networkd;
+			productReference = A9B6EDA51EB8BDC6004A9064 /* Networkd.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9B6EDB81EB8BDC7004A9064 /* NetworkdTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9B6EDD01EB8BDC7004A9064 /* Build configuration list for PBXNativeTarget "NetworkdTests" */;
+			buildPhases = (
+				D4CC3929E7007C279B6ED5BF /* [CP] Check Pods Manifest.lock */,
+				A9B6EDB51EB8BDC7004A9064 /* Sources */,
+				A9B6EDB61EB8BDC7004A9064 /* Frameworks */,
+				A9B6EDB71EB8BDC7004A9064 /* Resources */,
+				D9C4B585ECA3EB245BEEFE03 /* [CP] Embed Pods Frameworks */,
+				7237C9FA25EDB7C0270E48AA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9B6EDBB1EB8BDC7004A9064 /* PBXTargetDependency */,
+			);
+			name = NetworkdTests;
+			productName = NetworkdTests;
+			productReference = A9B6EDB91EB8BDC7004A9064 /* NetworkdTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A9B6EDC31EB8BDC7004A9064 /* NetworkdUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9B6EDD31EB8BDC7004A9064 /* Build configuration list for PBXNativeTarget "NetworkdUITests" */;
+			buildPhases = (
+				A9B6EDC01EB8BDC7004A9064 /* Sources */,
+				A9B6EDC11EB8BDC7004A9064 /* Frameworks */,
+				A9B6EDC21EB8BDC7004A9064 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9B6EDC61EB8BDC7004A9064 /* PBXTargetDependency */,
+			);
+			name = NetworkdUITests;
+			productName = NetworkdUITests;
+			productReference = A9B6EDC41EB8BDC7004A9064 /* NetworkdUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9B6ED9D1EB8BDC6004A9064 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Refundo LLC";
+				TargetAttributes = {
+					A9B6EDA41EB8BDC6004A9064 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = XP3GDZWZT7;
+						ProvisioningStyle = Automatic;
+					};
+					A9B6EDB81EB8BDC7004A9064 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A9B6EDA41EB8BDC6004A9064;
+					};
+					A9B6EDC31EB8BDC7004A9064 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = XP3GDZWZT7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A9B6EDA41EB8BDC6004A9064;
+					};
+				};
+			};
+			buildConfigurationList = A9B6EDA01EB8BDC6004A9064 /* Build configuration list for PBXProject "Networkd" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9B6ED9C1EB8BDC6004A9064;
+			productRefGroup = A9B6EDA61EB8BDC6004A9064 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9B6EDA41EB8BDC6004A9064 /* Networkd */,
+				A9B6EDB81EB8BDC7004A9064 /* NetworkdTests */,
+				A9B6EDC31EB8BDC7004A9064 /* NetworkdUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9B6EDA31EB8BDC6004A9064 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A965230E1EB8E0E800D948C1 /* Brandon-Bold.otf in Resources */,
+				A9B6EDB31EB8BDC6004A9064 /* LaunchScreen.storyboard in Resources */,
+				A98FB82D1EBD269700F59D87 /* SnackBar.xib in Resources */,
+				A92AE51D1EBB9B38008C0D26 /* dell.jpg in Resources */,
+				A92AE5201EBBB20F008C0D26 /* editIcon.png in Resources */,
+				A9B6EDB01EB8BDC6004A9064 /* Assets.xcassets in Resources */,
+				A92AE4FF1EBA7595008C0D26 /* padLock.png in Resources */,
+				A9B6EDAE1EB8BDC6004A9064 /* Main.storyboard in Resources */,
+				A91C9C4B1EC0CC9500FAEE13 /* appleLogo.jpg in Resources */,
+				A92AE5091EBA81C9008C0D26 /* avatar.png in Resources */,
+				A92AE5261EBBB9C8008C0D26 /* uninorte.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9B6EDB71EB8BDC7004A9064 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F90798B1EC3FC7A001761B0 /* error_reset_pass.plist in Resources */,
+				4F670E451EC36C0700C12AEB /* gravatar.plist in Resources */,
+				4F90798C1EC3FC7A001761B0 /* success.plist in Resources */,
+				4F670E261EC16D6C00C12AEB /* login_wrong.plist in Resources */,
+				4F1B26901EC0A6290003AA7A /* login.plist in Resources */,
+				4F670E431EC3499F00C12AEB /* signup.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9B6EDC21EB8BDC7004A9064 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40B7FC27BB717B6D2B27B41F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Networkd/Pods-Networkd-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D82E63CCE2226AB27126972 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Networkd/Pods-Networkd-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7237C9FA25EDB7C0270E48AA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NetworkdTests/Pods-NetworkdTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FD4BA51C96DBC2F19236D69 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A902282C1EC346B6008A2A38 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 610800a2295ab10d55249628735911bd11f902f5 f86f9648b65fe9b1784bf74b0635e541c951f745783d4d9e1fbd66fc5d69da74";
+		};
+		D4CC3929E7007C279B6ED5BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D9C4B585ECA3EB245BEEFE03 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NetworkdTests/Pods-NetworkdTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9B6EDA11EB8BDC6004A9064 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A96523151EB8E9B600D948C1 /* String+Extension.swift in Sources */,
+				A965231C1EB90D7900D948C1 /* UIColor+NTWColors.swift in Sources */,
+				A98FB81E1EBD265E00F59D87 /* NTWSwitchTableViewCell.swift in Sources */,
+				A90666721EC22ADC0091C838 /* NTWNewsViewController.swift in Sources */,
+				A97016A01EC3A41600ED6C83 /* NTWTexlInputAppearance.swift in Sources */,
+				A90666771EC26F710091C838 /* NTWCreateAPostViewController.swift in Sources */,
+				A91C9C491EC0A18700FAEE13 /* NTWAddWorkExperienceViewController.swift in Sources */,
+				A98FB8291EBD268E00F59D87 /* NTWSignInViewController.swift in Sources */,
+				4F7B43351EBD04020026263B /* BaseInteractor.swift in Sources */,
+				A98FB81A1EBD265E00F59D87 /* NTWExperienceTableViewCell.swift in Sources */,
+				A985ED6F1EC4FCBA000DEA32 /* MessageInteractor.swift in Sources */,
+				A98FB8201EBD265E00F59D87 /* NTWTagsTableViewCell.swift in Sources */,
+				4FB4ADCD1EBF4DF700498CEB /* NetworkdAdapter.swift in Sources */,
+				4F7B43331EBD03C50026263B /* SignInInteractor.swift in Sources */,
+				4F670E471EC371EC00C12AEB /* RPGravatar.swift in Sources */,
+				4F670E2A1EC1FCF700C12AEB /* LocalStorage.swift in Sources */,
+				A9D54D771EC5F54A00A78FAD /* NTWAnimatedLaunchScreenViewController.swift in Sources */,
+				A96523191EB90CBC00D948C1 /* NTWColors.swift in Sources */,
+				A906666C1EC1F5060091C838 /* NTWButtonTableViewCell.swift in Sources */,
+				A98FB8211EBD265E00F59D87 /* NTWTitleTableViewCell.swift in Sources */,
+				4F1B26921EC0A7650003AA7A /* RPConstants.swift in Sources */,
+				A98FB8101EBD265400F59D87 /* NTWProfileViewController.swift in Sources */,
+				4F1B269B1EC10AA90003AA7A /* RPSkill.swift in Sources */,
+				A985ED711EC4FE4F000DEA32 /* InputsValidator.swift in Sources */,
+				A985ED6A1EC4BFD9000DEA32 /* NTWUser.swift in Sources */,
+				A98FB8251EBD267A00F59D87 /* NTWPasswordRecoveryViewController.swift in Sources */,
+				4F9079901EC40DB2001761B0 /* NTWSuccess.swift in Sources */,
+				A906666F1EC201090091C838 /* NTWAddEducationViewController.swift in Sources */,
+				A9B6EDA91EB8BDC6004A9064 /* AppDelegate.swift in Sources */,
+				4F1B268B1EC01DEB0003AA7A /* RPUser.swift in Sources */,
+				4F670E2F1EC21BB800C12AEB /* NTWWorkExperience.swift in Sources */,
+				4F670E351EC23B4D00C12AEB /* NTWSkills.swift in Sources */,
+				A9D54D811EC6439A00A78FAD /* NTWCreateConnectionViewController.swift in Sources */,
+				A98FB82C1EBD269700F59D87 /* SnackBar.swift in Sources */,
+				4F7B43381EBD04FA0026263B /* BasePresenter.swift in Sources */,
+				A90666741EC246C10091C838 /* NTWNewsTableViewCell.swift in Sources */,
+				4F1B26941EC0D14C0003AA7A /* RPWorkExperience.swift in Sources */,
+				A97016A31EC3AD1000ED6C83 /* NTWAddReplyViewController.swift in Sources */,
+				4F670E3F1EC2B78E00C12AEB /* RPSession.swift in Sources */,
+				4F1B26991EC1055D0003AA7A /* RPInterest.swift in Sources */,
+				A98FB8111EBD265400F59D87 /* NTWTagsFlowLayout.swift in Sources */,
+				4F90798E1EC40D60001761B0 /* ResetPassInteractor.swift in Sources */,
+				4F9079921EC415D7001761B0 /* RPSuccess.swift in Sources */,
+				4F670E4B1EC3737A00C12AEB /* NTWGravatar.swift in Sources */,
+				4F670E331EC21D6000C12AEB /* NTWInterest.swift in Sources */,
+				A985ED681EC4B5FA000DEA32 /* NTWInputTableViewCell.swift in Sources */,
+				4F670E411EC2B83000C12AEB /* File.swift in Sources */,
+				A95865121EC660CE00BE3A05 /* NTWConnectionTableViewCell.swift in Sources */,
+				A98FB8241EBD267A00F59D87 /* NTWPasswordRecoveryConfirmationViewController.swift in Sources */,
+				A98FB81C1EBD265E00F59D87 /* NTWProfilePictureTableViewCell.swift in Sources */,
+				A98FB81F1EBD265E00F59D87 /* NTWTagCollectionViewCell.swift in Sources */,
+				A91C9C511EC11BD800FAEE13 /* NTWSearchViewController.swift in Sources */,
+				4F1B26971EC0F4140003AA7A /* RPEducation.swift in Sources */,
+				A92A3EA81EBA0FDA00D75AC4 /* NTWGlobalAppearance.swift in Sources */,
+				A98FB8271EBD268400F59D87 /* NTWSignUpViewController.swift in Sources */,
+				A96523131EB8E99200D948C1 /* UIView+Extension.swift in Sources */,
+				4F670E311EC21C5F00C12AEB /* NTWEducation.swift in Sources */,
+				A98FB80D1EBD214300F59D87 /* UIImage+Extensions.swift in Sources */,
+				4FB4ADCB1EBF4C8200498CEB /* CloudStorage.swift in Sources */,
+				A9D54D8C1EC6499000A78FAD /* NTWConnectiosPagesParenViewController.swift in Sources */,
+				A97016A51EC3B14F00ED6C83 /* NTWReplyTableViewCell.swift in Sources */,
+				A965231E1EB90DA900D948C1 /* UIColor+Extension.swift in Sources */,
+				A985ED6D1EC4F6C9000DEA32 /* ProgressInteractor.swift in Sources */,
+				4F670E2C1EC2073100C12AEB /* UserRepo.swift in Sources */,
+				4F1B268D1EC01E130003AA7A /* RPError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9B6EDB51EB8BDC7004A9064 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F7B43431EBD65D50026263B /* CloudStorageTest.swift in Sources */,
+				4F1D5D6A1EC3E62800A31AA8 /* BaseInteractorTest.swift in Sources */,
+				4F9079881EC3F82F001761B0 /* ResetPasswordInteractorTest.swift in Sources */,
+				4F7B433B1EBD08D80026263B /* NetworkdTestSuite.swift in Sources */,
+				4F670E3A1EC2537200C12AEB /* LocalFake.swift in Sources */,
+				4F670E371EC2523C00C12AEB /* SignInInteractorTest.swift in Sources */,
+				4F670E3D1EC2547B00C12AEB /* BaseViewFake.swift in Sources */,
+				A9B6EDBE1EB8BDC7004A9064 /* NetworkdTests.swift in Sources */,
+				4FB4ADD01EBF69C200498CEB /* NetworkFake.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9B6EDC01EB8BDC7004A9064 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9B6EDC91EB8BDC7004A9064 /* NetworkdUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9B6EDBB1EB8BDC7004A9064 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9B6EDA41EB8BDC6004A9064 /* Networkd */;
+			targetProxy = A9B6EDBA1EB8BDC7004A9064 /* PBXContainerItemProxy */;
+		};
+		A9B6EDC61EB8BDC7004A9064 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9B6EDA41EB8BDC6004A9064 /* Networkd */;
+			targetProxy = A9B6EDC51EB8BDC7004A9064 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A9B6EDAC1EB8BDC6004A9064 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9B6EDAD1EB8BDC6004A9064 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A9B6EDB11EB8BDC6004A9064 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9B6EDB21EB8BDC6004A9064 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9B6EDCB1EB8BDC7004A9064 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A9B6EDCC1EB8BDC7004A9064 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9B6EDCE1EB8BDC7004A9064 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F49C5C269933064E5CBBC59 /* Pods-Networkd.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XP3GDZWZT7;
+				ENABLE_BITCODE = YES;
+				INFOPLIST_FILE = Networkd/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.Networkd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A9B6EDCF1EB8BDC7004A9064 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E75D18D30374D9734EAB389D /* Pods-Networkd.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XP3GDZWZT7;
+				ENABLE_BITCODE = YES;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = Networkd/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.Networkd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A9B6EDD11EB8BDC7004A9064 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3246C6A256EEB75126D9CC1 /* Pods-NetworkdTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = NetworkdTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.refundo.NetworkdTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Networkd.app/Networkd";
+			};
+			name = Debug;
+		};
+		A9B6EDD21EB8BDC7004A9064 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEA55EF2911A6FFC42A8AD0F /* Pods-NetworkdTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = NetworkdTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.refundo.NetworkdTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Networkd.app/Networkd";
+			};
+			name = Release;
+		};
+		A9B6EDD41EB8BDC7004A9064 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = XP3GDZWZT7;
+				INFOPLIST_FILE = NetworkdUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.refundo.NetworkdUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Networkd;
+			};
+			name = Debug;
+		};
+		A9B6EDD51EB8BDC7004A9064 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = XP3GDZWZT7;
+				INFOPLIST_FILE = NetworkdUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.refundo.NetworkdUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Networkd;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9B6EDA01EB8BDC6004A9064 /* Build configuration list for PBXProject "Networkd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9B6EDCB1EB8BDC7004A9064 /* Debug */,
+				A9B6EDCC1EB8BDC7004A9064 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9B6EDCD1EB8BDC7004A9064 /* Build configuration list for PBXNativeTarget "Networkd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9B6EDCE1EB8BDC7004A9064 /* Debug */,
+				A9B6EDCF1EB8BDC7004A9064 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9B6EDD01EB8BDC7004A9064 /* Build configuration list for PBXNativeTarget "NetworkdTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9B6EDD11EB8BDC7004A9064 /* Debug */,
+				A9B6EDD21EB8BDC7004A9064 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9B6EDD31EB8BDC7004A9064 /* Build configuration list for PBXNativeTarget "NetworkdUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9B6EDD41EB8BDC7004A9064 /* Debug */,
+				A9B6EDD51EB8BDC7004A9064 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9B6ED9D1EB8BDC6004A9064 /* Project object */;
+}
